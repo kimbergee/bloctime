@@ -12,6 +12,10 @@
   <h5>A simple time-management system based on the Pomodoro technique</h5>
 
   <ui-view></ui-view>
+  <!-- <timer></timer> -->
+
+  <!-- jqLite -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -25,9 +29,6 @@
   <!-- UI-Router -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 
-  <!-- Moment.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.js"></script>
-
   <script>
   // Initialize the Firebase SDK
   var config = {
@@ -39,5 +40,8 @@
   firebase.initializeApp(config);
   </script>
   <script src="/scripts/app.js"></script>
+  <script src="/scripts/controllers/HomeCtrl.js"></script>
+  <script src="/scripts/directives/timer.js"></script>
+  <script src="/scripts/filters/timecode.js"></script>
 </body>
 </html>
