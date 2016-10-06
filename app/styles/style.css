@@ -1,3 +1,84 @@
 body {
   padding: 20px;
+  background-color: #D94A3C;
 }
+
+.app-name {
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 70px;
+  color: #79251a;
+}
+
+h5 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #79251a;
+  /*color: #FF9505;*/
+}
+
+.button-start {
+  color: white;
+  background: #4bafc7;
+  border: 1px solid #4bafc7;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 12px 12px;
+  font-weight: 900;
+  display: inline-block;
+  text-decoration: none !important;
+  text-align: center;
+  min-width: 75px;
+  min-height: 50px;
+}
+
+.button-start:focus {
+  outline: none;
+}
+
+.button-stop {
+  color: white;
+  background: #FF9505;
+  border: 1px solid #FF9505;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  padding: 12px 12px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: inline-block;
+  text-decoration: none !important;
+  text-align: center;
+  min-width: 75px;
+  min-height: 50px;
+}
+
+.button-stop:focus {
+  outline: none;
+}
+
+.timer {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.countdown {
+  color: #fbeceb;
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
