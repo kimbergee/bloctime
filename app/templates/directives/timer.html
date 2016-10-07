@@ -1,7 +1,8 @@
 <div class="timer">
+  <div class="scope-msg">{{ message }}</div>
   <div class="countdown">
     <i class="fa fa-clock-o" aria-hidden="true"></i>
-    {{ workTimer | timecode}}
+    {{ currentTime | timecode}}
   </div>
   <button type="button" ng-class="isActive? 'button-stop' : 'button-start'" ng-click="toggle()">{{ buttonText }}</button>
 </div>
