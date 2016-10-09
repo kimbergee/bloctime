@@ -6,10 +6,10 @@ body {
 .app-name {
   padding-top: 20px;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Syncopate', sans-serif;
   font-weight: 900;
-  text-transform: uppercase;
   font-size: 70px;
+  /*color: #aac9e5;*/
   color: #79251a;
 }
 
@@ -17,13 +17,12 @@ h5 {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: #79251a;
-  /*color: #FF9505;*/
 }
 
 .button-start {
-  color: white;
-  background: #4bafc7;
-  border: 1px solid #4bafc7;
+  color: #fbeceb;
+  background: #97b3cc;
+  border: 1px solid #97b3cc;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
@@ -41,9 +40,10 @@ h5 {
 }
 
 .button-stop {
-  color: white;
-  background: #FF9505;
-  border: 1px solid #FF9505;
+  color: #fbeceb;
+  /*background: #76b0b2;*/
+  background: #ea9e98;
+  border: 1px solid #ea9e98;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   padding: 12px 12px;
@@ -67,18 +67,23 @@ h5 {
 
 .countdown {
   color: #fbeceb;
-  font-family: 'Poppins', sans-serif;
-  font-size: 60px;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 70px;
+  font-weight: 900;
   padding-top: 50px;
   padding-bottom: 100px;
 }
 
+.scope-msg {
+  color: #fbeceb;
+  font-family: 'Syncopate', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
 /*
 font-family: 'Raleway', sans-serif;
-font-family: 'Josefin Slab', serif;
-font-family: 'Merriweather', serif;
-font-family: 'Sacramento', cursive;
+font-family: 'Syncopate', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
