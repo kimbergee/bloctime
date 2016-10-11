@@ -14,15 +14,25 @@
         scope.buttonText = "Start";
         scope.message = "Time to work!";
         scope.currentTime = MY_TIMES.work;
+        scope.completedWorkSesh = 1;
 
         incrementTimer = function() {
           scope.currentTime--;
 
           if (scope.currentTime <= 0) {
             if (!scope.onBreak) {
-              scope.currentTime = MY_TIMES.break;
-              scope.onBreak = true;
-              scope.message = "Take a break!";
+              if (scope.completedWorkSesh == 4) {
+                scope.currentTime = MY_TIMES.longBreak;
+                scope.onBreak = true;
+                scope.message = "Take a long break!";
+                scope.completedWorkSesh = 0;
+              } else {
+                scope.currentTime = MY_TIMES.break;
+                scope.onBreak = true;
+                scope.message = "Take a break!";
+                scope.completedWorkSesh++;
+                console.log(scope.completedWorkSesh);
+              }
             } else {
               scope.currentTime = MY_TIMES.work;
               scope.onBreak = false;
@@ -66,6 +76,7 @@
     .directive('timer', timer)
     .constant("MY_TIMES", {
       "work": 1500,
-      "break": 300
+      "break": 300,
+      "longBreak": 1800
     });
 })();
