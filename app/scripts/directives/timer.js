@@ -8,6 +8,9 @@
       link: function(scope, elemnt, attributes) {
 
         var interval, incrementTimer;
+        var mySound = new buzz.sound("/assets/sounds/DingLing.mp3", {
+          preload: true
+        });
 
         scope.onBreak = false;
         scope.isActive = false;
@@ -15,6 +18,14 @@
         scope.message = "Time to work!";
         scope.currentTime = MY_TIMES.work;
         scope.completedWorkSesh = 1;
+
+        // if i wanted to use scope.$watch
+        // scope.$watch('currentTime', function() {
+        //   console.log('scope.currentTime', scope.currentTime);
+        //   if (scope.currentTime == 1) {
+        //     mySound.play();
+        //   }
+        // });
 
         incrementTimer = function() {
           scope.currentTime--;
@@ -31,13 +42,13 @@
                 scope.onBreak = true;
                 scope.message = "Take a break!";
                 scope.completedWorkSesh++;
-                console.log(scope.completedWorkSesh);
               }
             } else {
               scope.currentTime = MY_TIMES.work;
               scope.onBreak = false;
               scope.message = "Time to work!";
             }
+            mySound.play();
             resetTimer();
           };
         };
@@ -75,8 +86,11 @@
     .module('bloctime')
     .directive('timer', timer)
     .constant("MY_TIMES", {
-      "work": 1500,
-      "break": 300,
-      "longBreak": 1800
+      // "work": 1500,
+      // "break": 300,
+      // "longBreak": 1800
+      "work": 5,
+      "break": 5,
+      "longBreak": 5
     });
 })();
