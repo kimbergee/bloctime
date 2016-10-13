@@ -3,19 +3,76 @@ body {
   background-color: #D94A3C;
 }
 
+h5 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #79251a;
+}
+
+table {
+  padding: 10px 5px 10px 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #79251a;
+  max-width: 230px;
+}
+
+td {
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+aside {
+  float: left;
+}
+
+#list-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: #79251a;
+  text-transform: uppercase;
+}
+
+.task-input {
+  border: none;
+  background: #fbeceb;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: normal;
+  margin-right: 6px;
+  display: inline-block;
+  min-height: 25px;
+}
+
+.task-input:focus {
+  outline: none;
+}
+
+.add-button {
+  color: #fbeceb;
+  background: #79251a;
+  border: 1px solid #79251a;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  padding: 10px 10px;
+  display: inline-block;
+  text-decoration: none !important;
+  text-align: center;
+  min-width: 50px;
+  min-height: 25px;
+}
+
+.fa-times:hover {
+  cursor: pointer;
+}
+
 .app-name {
   padding-top: 20px;
   text-align: center;
   font-family: 'Syncopate', sans-serif;
   font-weight: 900;
   font-size: 70px;
-  /*color: #aac9e5;*/
-  color: #79251a;
-}
-
-h5 {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
   color: #79251a;
 }
 
@@ -41,7 +98,6 @@ h5 {
 
 .button-stop {
   color: #fbeceb;
-  /*background: #76b0b2;*/
   background: #ea9e98;
   border: 1px solid #ea9e98;
   font-family: 'Raleway', sans-serif;
@@ -63,6 +119,9 @@ h5 {
 .timer {
   padding-top: 50px;
   text-align: center;
+  overflow: auto;
+  width: 60%;
+  border-left: 1px dashed #79251a;
 }
 
 .countdown {
@@ -71,7 +130,7 @@ h5 {
   font-size: 70px;
   font-weight: 900;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 
 .scope-msg {
@@ -81,9 +140,13 @@ h5 {
   font-size: 25px;
 }
 
+.tasks {
+  float: left;
+  padding-right: 10px;
+}
+
+
 /*
 font-family: 'Raleway', sans-serif;
 font-family: 'Syncopate', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Poppins', sans-serif;
 */

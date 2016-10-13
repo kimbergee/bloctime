@@ -1,3 +1,18 @@
-<!-- <div ng-controller="HomeCtrl">
-</div> -->
+<aside>
+  <div class="tasks">
+    <p id="list-name">Completed Tasks</p>
+    <form ng-submit="addTask()">
+      <input class="task-input" ng-model="newTask.text" placeholder="enter task" />
+      <button type="submit" class="add-button">add</button>
+    </form>
+    <br>
+    <table>
+      <tr ng-repeat="task in tasks | orderBy: '-time'">
+        <td><i class="fa fa-times" aria-hidden="true" ng-click="tasks.$remove(task)"></i></td>
+        <td>{{ task.text }}</td>
+      </tr>
+    </table>
+  </div>
+</aside>
+
 <timer> </timer>

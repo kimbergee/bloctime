@@ -5,7 +5,7 @@
       replace: true,
       restrict: 'E',
       scope: { },
-      link: function(scope, elemnt, attributes) {
+      link: function(scope, element, attributes) {
 
         var interval, incrementTimer;
         var mySound = new buzz.sound("/assets/sounds/DingLing.mp3", {
