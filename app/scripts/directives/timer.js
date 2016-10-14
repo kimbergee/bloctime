@@ -86,11 +86,8 @@
     .module('bloctime')
     .directive('timer', timer)
     .constant("MY_TIMES", {
-      // "work": 1500,
-      // "break": 300,
-      // "longBreak": 1800
-      "work": 5,
-      "break": 5,
-      "longBreak": 5
+      "work": 1500,
+      "break": 300,
+      "longBreak": 1800
     });
 })();
