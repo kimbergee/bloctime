@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins|Raleway|Syncopate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Syncopate" rel="stylesheet">
 </head>
 <body>
   <div class="app-name">P<i class="fa fa-smile-o" aria-hidden="true"></i>moTime</div>
@@ -20,9 +20,6 @@
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-
   <!-- AngularFire -->
   <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
 
@@ -35,13 +32,15 @@
   <!-- Buzz Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.0/buzz.min.js"></script>
 
+  <!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
   <script>
   // Initialize the Firebase SDK
   var config = {
     apiKey: "AIzaSyBocKILi5bOgQkFQ5uuPiulFxfdlutOsA8",
     authDomain: "bloctime-109ca.firebaseapp.com",
     databaseURL: "https://bloctime-109ca.firebaseio.com",
-    storageBucket: "",
+    storageBucket: "bloctime-109ca.appspot.com",
   };
   firebase.initializeApp(config);
   </script>
@@ -49,5 +48,6 @@
   <script src="/scripts/controllers/HomeCtrl.js"></script>
   <script src="/scripts/directives/timer.js"></script>
   <script src="/scripts/filters/timecode.js"></script>
+  <script src="/scripts/services/Tasks.js"></script>
 </body>
 </html>
