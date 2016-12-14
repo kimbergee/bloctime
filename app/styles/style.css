@@ -1,79 +1,112 @@
 body {
-  padding: 20px;
+  padding: 1.5em;
   background-color: #D94A3C;
 }
 
-h5 {
+#app-name {
+  padding-top: .5em;
+  text-align: center;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 900;
+  font-size: 5em;
+  color: #79251a;
+}
+
+#tagline {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: #79251a;
 }
 
-table {
-  padding: 10px 5px 10px 20px;
-  font-family: 'Raleway', sans-serif;
-  color: #79251a;
-  max-width: 230px;
-}
-
-td {
-  padding-right: 5px;
-  font-size: 12px;
-}
+/* side tasks */
 
 aside {
   float: left;
 }
 
+.side-tasks {
+  float: left;
+  padding-right: 1em;
+}
+
 #list-name {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 1.5em;
   text-align: left;
   color: #79251a;
   text-transform: uppercase;
 }
 
-.task-input {
+#task-input {
   border: none;
   background: #fbeceb;
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  padding: 5px 10px;
+  font-size: 1em;
+  padding: .5em 1em;
   font-weight: normal;
-  margin-right: 6px;
+  margin-right: .3em;
   display: inline-block;
-  min-height: 25px;
+  min-height: 1.5em;
 }
 
-.task-input:focus {
+#task-input:focus {
   outline: none;
 }
 
-.add-button {
+#add-button {
   color: #fbeceb;
   background: #79251a;
   border: 1px solid #79251a;
   font-family: 'Raleway', sans-serif;
-  font-size: 12px;
-  padding: 10px 10px;
+  font-size: 1em;
+  padding: .5em 1em;
   display: inline-block;
   text-decoration: none !important;
   text-align: center;
-  min-width: 50px;
-  min-height: 25px;
+  min-width: 3em;
+  min-height: 2.5em;
+}
+
+table {
+  padding: 1em .5em 1em 1.5em;
+  font-family: 'Raleway', sans-serif;
+  color: #79251a;
+  max-width: 20em;
+}
+
+td {
+  padding-right: .5em;
+  font-size: .9em;
 }
 
 .fa-times:hover {
   cursor: pointer;
 }
 
-.app-name {
-  padding-top: 20px;
+/* timer */
+
+.timer {
+  padding-top: 4em;
   text-align: center;
+  overflow: auto;
+  width: 60%;
+  border-left: 1px dashed #79251a;
+}
+
+#scope-msg {
+  color: #fbeceb;
   font-family: 'Syncopate', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.countdown {
+  color: #fbeceb;
+  font-family: 'Raleway', sans-serif;
+  font-size: 4.5em;
   font-weight: 900;
-  font-size: 70px;
-  color: #79251a;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .button-start {
@@ -81,15 +114,15 @@ aside {
   background: #97b3cc;
   border: 1px solid #97b3cc;
   font-family: 'Raleway', sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   text-transform: uppercase;
-  padding: 12px 12px;
+  padding: .8em .8em;
   font-weight: 900;
   display: inline-block;
   text-decoration: none !important;
   text-align: center;
-  min-width: 75px;
-  min-height: 50px;
+  min-width: 5em;
+  min-height: 3em;
 }
 
 .button-start:focus {
@@ -101,48 +134,19 @@ aside {
   background: #ea9e98;
   border: 1px solid #ea9e98;
   font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  padding: 12px 12px;
+  font-size: 1em;
   text-transform: uppercase;
+  padding: .8em .8em;
   font-weight: bolder;
   display: inline-block;
   text-decoration: none !important;
   text-align: center;
-  min-width: 75px;
-  min-height: 50px;
+  min-width: 5em;
+  min-height: 3em;
 }
 
 .button-stop:focus {
   outline: none;
-}
-
-.timer {
-  padding-top: 50px;
-  text-align: center;
-  overflow: auto;
-  width: 60%;
-  border-left: 1px dashed #79251a;
-}
-
-.countdown {
-  color: #fbeceb;
-  font-family: 'Raleway', sans-serif;
-  font-size: 70px;
-  font-weight: 900;
-  padding-top: 50px;
-  padding-bottom: 70px;
-}
-
-.scope-msg {
-  color: #fbeceb;
-  font-family: 'Syncopate', sans-serif;
-  text-transform: uppercase;
-  font-size: 25px;
-}
-
-.tasks {
-  float: left;
-  padding-right: 10px;
 }
 
 
