@@ -27,20 +27,19 @@ aside {
 .side-tasks {
   float: left;
   padding-right: 1em;
+  font-family: 'Raleway', sans-serif;
 }
 
-#list-name {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
+.side-tasks h2 {
   text-align: left;
   color: #79251a;
+  font-weight: 200;
   text-transform: uppercase;
 }
 
-#task-input {
+.side-tasks form input {
   border: none;
   background: #fbeceb;
-  font-family: 'Raleway', sans-serif;
   font-size: 1em;
   padding: .5em 1em;
   font-weight: normal;
@@ -49,15 +48,14 @@ aside {
   min-height: 1.5em;
 }
 
-#task-input:focus {
+.side-tasks form input:focus {
   outline: none;
 }
 
-#add-button {
+.side-tasks form button {
   color: #fbeceb;
   background: #79251a;
   border: 1px solid #79251a;
-  font-family: 'Raleway', sans-serif;
   font-size: 1em;
   padding: .5em 1em;
   display: inline-block;
@@ -69,7 +67,6 @@ aside {
 
 table {
   padding: 1em .5em 1em 1.5em;
-  font-family: 'Raleway', sans-serif;
   color: #79251a;
   max-width: 20em;
 }
@@ -85,35 +82,31 @@ td {
 
 /* timer */
 
-.timer {
+#timer {
   padding-top: 4em;
   text-align: center;
   overflow: auto;
   width: 60%;
   border-left: 1px dashed #79251a;
+  font-family: 'Raleway', sans-serif;
 }
 
-#scope-msg {
+#timer h2 {
   color: #fbeceb;
   font-family: 'Syncopate', sans-serif;
   text-transform: uppercase;
-  font-size: 1.5em;
 }
 
-.countdown {
+#countdown {
   color: #fbeceb;
-  font-family: 'Raleway', sans-serif;
   font-size: 4.5em;
   font-weight: 900;
-  padding-top: 1em;
+  padding-top: .5em;
   padding-bottom: 1em;
 }
 
-.button-start {
+#timer button {
   color: #fbeceb;
-  background: #97b3cc;
-  border: 1px solid #97b3cc;
-  font-family: 'Raleway', sans-serif;
   font-size: 1em;
   text-transform: uppercase;
   padding: .8em .8em;
@@ -125,27 +118,18 @@ td {
   min-height: 3em;
 }
 
-.button-start:focus {
-  outline: none;
+#timer button.button-start {
+  background: #97b3cc;
+  border: 1px solid #97b3cc;
 }
 
-.button-stop {
-  color: #fbeceb;
+#timer button.button-stop {
   background: #ea9e98;
   border: 1px solid #ea9e98;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1em;
-  text-transform: uppercase;
-  padding: .8em .8em;
-  font-weight: bolder;
-  display: inline-block;
-  text-decoration: none !important;
-  text-align: center;
-  min-width: 5em;
-  min-height: 3em;
 }
 
-.button-stop:focus {
+#timer button.button-start:focus,
+#timer button.button-stop:focus {
   outline: none;
 }
 
